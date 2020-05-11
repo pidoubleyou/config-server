@@ -1,0 +1,13 @@
+test-config: hallo2
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: rewritepath_route
+          uri: http://baeldung.com
+          predicates:
+            - Path=/articles/**
+          filters:
+            - RewritePath=/articles/(?<articleId>.*), /$\{articleId}
+            
