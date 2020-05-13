@@ -14,7 +14,7 @@ research on dynamically adding routes to Spring Cloud Gateway
 
 ## Research
 
-* show configured routes: `http://localhost:8080/articles/spring-cloud-gateway`
+* show configured routes: `http://localhost:8080/actuator/gateway/routes`
 * refresh configuration: `http://localhost:8080/actuator/refresh`
 
 ### adding new routes using config server
