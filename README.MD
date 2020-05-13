@@ -26,7 +26,11 @@ research on dynamically adding routes to Spring Cloud Gateway
 ### multiple profiles
 
 * problem: profile name required at startup of gateway
+* problem: no merge of route configs
 
 ### using gateway api
 
-### using discovery?
+* register routes using the gateway api
+* problem: routes lost after restart/redeploy
+
+### using discovery
